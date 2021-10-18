@@ -20,8 +20,8 @@ class App extends React.Component {
       <div>
         <ThemeContext.Provider value={this.state.theme}>
           <ThemedButton onClick={this.toggleTheme}>Dynamic ThemeM</ThemedButton>
-          <ThemedButton onClick={this.toggleTheme}>Default ThemeM</ThemedButton>
         </ThemeContext.Provider>
+          <ThemedButton onClick={this.toggleTheme}>Default ThemeM</ThemedButton>
       </div>
     );
   }
