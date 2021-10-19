@@ -1,4 +1,4 @@
-import { SAVE_USER, CLEAR_USER } from './user.actions';
+import { SET_USER, REMOVE_USER } from './user.actions';
 
 const initialState = {
   user: null,
@@ -6,10 +6,10 @@ const initialState = {
 
 const userReducer = (state = null, action) => {
   switch (action.type) {
-    case SAVE_USER:
+    case SET_USER:
       return { ...state, user: action.payload.userData };
 
-    case CLEAR_USER:
+    case REMOVE_USER:
       return { ...state, user: null };
 
     default:
