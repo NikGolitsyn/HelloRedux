@@ -8,6 +8,7 @@ const UserInfo = ({ userData, isFetching }) => {
   if (isFetching) {
     return <Spinner />;
   }
+  
   if (!userData) {
     return null;
   }

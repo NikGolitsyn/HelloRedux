@@ -34,7 +34,6 @@ SearchField.propTypes = {
 };
 
 const mapDispatch = {
-  showSpinner: usersActions.showSpinner,
   userDataRecieved: usersActions.userDataRecieved,
   fetchUserData: usersActions.fetchUserData,
 };
