@@ -35,11 +35,9 @@ const Users = ({ users, addUser, deleteUser }) => {
   );
 };
 
-const mapState = state => {
-  return {
+const mapState = state => ({
     users: state.users.usersList,
-  };
-};
+  });
 
 const mapDispatch = {
   addUser: usersActions.addUser,

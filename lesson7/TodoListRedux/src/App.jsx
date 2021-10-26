@@ -1,12 +1,12 @@
 import React from 'react';
 import { Provider } from 'react-redux';
-import Counter from './components/Counter.jsx';
+import TodoList from './tasks/components/TodoList';
 import store from './store.js';
 
 const App = () => (
-    <Provider store={store}>
-      <Counter />
-    </Provider>
-  );
+  <Provider store={store}>
+    <TodoList />
+  </Provider>
+);
 
 export default App;

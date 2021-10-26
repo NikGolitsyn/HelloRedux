@@ -3,12 +3,10 @@ import { Provider } from 'react-redux';
 import Users from './users/Users.jsx';
 import store from './store.js';
 
-const App = () => {
-  return (
+const App = () => (
     <Provider store={store}>
       <Users />
     </Provider>
   );
-};
 
 export default App;
